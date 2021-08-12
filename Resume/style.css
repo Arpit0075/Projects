@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+* {
+  font-family: "Baloo Bhaina 2", cursive;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.74);
+  height: 40vh;
+  padding-top: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+
+header .image {
+  margin: auto;
+  object-fit: contain;
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.image img {
+  /* width: 180px;
+  height: 232px; */
+  width: 120%;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px dotted rgb(125, 168, 8);
+}
+.heading {
+  text-align: center;
+  background-color: rgb(125, 168, 8);
+  z-index: 11;
+  position: absolute;
+  top: 81%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+}
+.heading h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem !important;
+}
+.background {
+  background-color: whitesmoke;
+  width: 95%;
+  z-index: 2;
+  position: absolute;
+  height: 5vh;
+  top: 81%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+.contact {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 2px solid rgb(16 16 16 / 29%);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0.9rem;
+  padding: 0.3rem;
+}
+section .left-section {
+  padding: 1rem;
+}
+.center {
+  text-align: center;
+}
+h2 {
+  color: rgba(0, 0, 0, 0.74);
+}
+h3 {
+  color: black;
+}
+section .right-section {
+  margin-left: 1rem;
+  padding: 1.1rem;
+}
+/* setting the position for icons and icon container */
+.icon-container {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 6px;
+  left: -11px;
+  border: 2px dotted rgb(125, 168, 8);
+  border-radius: 50%;
+}
+.subheading {
+  margin-left: 1.5rem;
+}
+@media screen and (min-width: 655px) {
+  .heading h1 {
+    font-size: 2.5rem !important;
+  }
+  .exprience-first {
+    position: relative;
+  }
+  .duration {
+    position: absolute;
+    top: 54%;
+    left: 70%;
+  }
+  .education-first {
+    position: relative;
+  }
+  .duration {
+    position: absolute;
+    top: 54%;
+    left: 70%;
+  }
+  .duration-1 {
+    position: absolute;
+    top: 22%;
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .heading h1 {
+    font-size: 3rem !important;
+  }
+  section {
+    flex-direction: row;
+  }
+  .left-section {
+    border-right: 2px solid rgb(16 16 16 / 29%);
+    width: 50%;
+  }
+  .right-section {
+    width: 50%;
+  }
+  header .image {
+    left: 47%;
+  }
+  .heading {
+    left: 49%;
+  }
+  .image img {
+    /* width: 247px;
+    height: 309px; */
+    width: 120%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  header {
+    height: 50vh;
+  }
+}
